@@ -9,22 +9,24 @@ import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 
 public class Question7 {
-    public class seven {
+
+    /**
+     * @throws IOException
+     * @throws URISyntaxException
+     */
         public void readStream()
                 throws IOException, URISyntaxException {
 
             String str = "";
-            URLConnection conn
-                    = new URL("https://blog.knoldus.com/").openConnection();
+            URLConnection conn = new URL(
+                    "https://blog.knoldus.com/").openConnection();
             BufferedReader br = new BufferedReader(
-                    new InputStreamReader(conn.getInputStream(), StandardCharsets.UTF_8));
+                    new InputStreamReader(conn.getInputStream(),
+                            StandardCharsets.UTF_8));
 
             while (br.readLine() != null) {
                 str += br.readLine();
             }
 
         }
-
-    }
-
 }

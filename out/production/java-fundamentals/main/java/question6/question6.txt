@@ -1,0 +1,4 @@
+Answer 6 :-
+
+ * We should use DTO i.e Data Transfer Object , we must not pass entity itself to the function
+   directly because it may cause security concern  .

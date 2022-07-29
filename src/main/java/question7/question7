@@ -4,7 +4,7 @@ Answer 7 :-
     Then it is not deallocated properly by programmer. That memory is no longer in use by the program.
     So that place is reserved for no reason. That's why this is called the memory leak.
 
- * Some idea to prevent from memory leakage ::::-
+ *  Some idea to prevent from memory leakage ::::-
       * Memory management is Java’s strongest suit and one of the many reasons developers choose
         Java over other platforms and programming languages.
       * On paper, you create objects, and Java deploys its garbage collector to allocate and free

@@ -1,3 +1,5 @@
+ Answer 8 :-
+
  * Yes, we can catch "Throwable" in java but its not a good practice.
 
  * There are several reasons why catching an instance of java.lang.Throwable is a bad idea because

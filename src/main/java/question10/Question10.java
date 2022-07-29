@@ -6,14 +6,22 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Question10{
-    public static void main(String[] args) {
-        List<String> names = new ArrayList<>(
-                Arrays.asList("Alok", "Harsh", "Shakti", "Krishna", "Tanuj", "Anoop"));
+public class Question10 {
+    /**
+     * @param args
+     */
+    public static void main(final String[] args) {
+        List<String> names =
+                new ArrayList<>(Arrays.asList(
+                        "Alok", "Harsh", "Shakti",
+                        "Krishna", "Tanuj", "Anoop"));
 
-        List<String> co = names.stream().sorted(
-                Comparator.comparing(n->n.toString())).collect(Collectors.toList());
+        System.out.println("Input = " + names);
 
-        System.out.println(co);
+        List<String> output =
+                names.stream().sorted(Comparator.comparing(
+                        n -> n.toString())).collect(Collectors.toList());
+
+        System.out.println("Output = " + output);
     }
 }
