@@ -9,20 +9,6 @@ import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 
 public class Question7 {
-
-/**
- *  The memory leak occurs, when a piece of memory which was previously allocated by the programmer.
- Then it is not deallocated properly by programmer. That memory is no longer in use by the program.
- So that place is reserved for no reason. That's why this is called the memory leak.
- *
- */
-
-    /**
-     * Some idea to prevent from memory leakage ::::-
-     * Memory management is Java’s strongest suit and one of the many reasons developers choose Java over other platforms and programming languages.
-     * On paper, you create objects, and Java deploys its garbage collector to allocate and free up memory.
-     * But that’s not to say Java is flawless. As a matter of fact, memory leaks happen, and they happen a lot in Java applications.
-     */
     public class seven {
         public void readStream()
                 throws IOException, URISyntaxException {
