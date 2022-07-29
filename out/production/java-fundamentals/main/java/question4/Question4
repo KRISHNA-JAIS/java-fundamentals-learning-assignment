@@ -1,0 +1,9 @@
+ Answer 4 :-
+
+ * It makes your code easier to read.
+
+ * It's more unit testable.
+   You've split your problem into several smaller tasks that are individually very simple.
+   The unit test collection would then be made up of a behavioral test suite that
+   checks the paths through the master method and a collection of smaller tests
+   for each individual procedure.

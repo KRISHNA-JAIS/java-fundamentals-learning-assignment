@@ -1,0 +1,30 @@
+ Answer 3 :-
+
+ * Classes marked as final can’t be extended.
+  If we look at the code of Java core libraries, we’ll find many final classes there.
+   One example is the String class.
+
+ * Consider the situation if we can extend the String class,
+  override any of its methods, and substitute all the String instances with the instances of our
+   specific String subclass.
+
+ * The result of the operations over String objects will then become unpredictable.
+  And given that the String class is used everywhere, it’s unacceptable.
+   That’s why the String class is marked as final.
+
+ * Any attempt to inherit from a final class will cause a compiler error. To demonstrate this,
+  let’s create the final class Cat:
+
+ * public final class Cat {
+
+       private int weight;
+
+       // standard getter and setter
+   }
+
+ * And let’s try to extend it:
+
+   public class BlackCat extends Cat {
+   }
+
+ * We’ll see the compiler error  .

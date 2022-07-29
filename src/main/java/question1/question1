@@ -1,0 +1,20 @@
+Answer 1 :-
+
+ * In the given code snippet , if compareStringValues(null) this method is called then it will throw
+   null pointer exception  .
+
+ * Always call equals() method on known String which is not null  .
+
+ * Example :-
+   String unknownObject = null;
+
+   // Wrong way - may cause NullPointerException
+   if(unknownObject.equals("knownObject")){
+      System.err.println("This may result in NullPointerException if unknownObject is null");
+   }
+
+   //  Correct way to avoid NullPointerException even if unknownObject is null
+   if("knownObject".equals(unknownObject)){
+       System.err.println("better coding avoided NullPointerException");
+   }
+
